@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacked by Infinity Sec</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://files.catbox.moe/7r4ia4.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: monospace;
+      color: red;
+      text-align: center;
+    }
+
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: black;
+      color: red;
+      font-size: 24px;
+      font-family: monospace;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      width: 80%;
+    }
+
+    h1, h2, h3, p {
+      position: relative;
+    }
+
+    h1.glitch {
+      font-size: 60px;
+      color: red;
+      animation: glitch 1s infinite;
+    }
+
+    h1.glitch::before,
+    h1.glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    h1.glitch::before {
+      color: #0ff;
+      z-index: -1;
+      animation: glitchTop 1s infinite;
+    }
+
+    h1.glitch::after {
+      color: #f0f;
+      z-index: -2;
+      animation: glitchBottom 1.5s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: none; }
+      20% { transform: skew(-5deg); }
+      40% { transform: skew(5deg); }
+      60% { transform: skew(-2deg); }
+      80% { transform: skew(2deg); }
+      100% { transform: none; }
+    }
+
+    @keyframes glitchTop {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      10% { clip: rect(0, 9999px, 5px, 0); }
+      20% { clip: rect(0, 9999px, 0, 0); }
+      30% { clip: rect(0, 9999px, 8px, 0); }
+      100% { clip: rect(0, 9999px, 0, 0); }
+    }
+
+    @keyframes glitchBottom {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      10% { clip: rect(12px, 9999px, 18px, 0); }
+      20% { clip: rect(5px, 9999px, 12px, 0); }
+      30% { clip: rect(2px, 9999px, 8px, 0); }
+      100% { clip: rect(0, 9999px, 0, 0); }
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 0;
+      color: white;
+    }
+
+    p {
+      font-size: 38px;
+      text-shadow: 1px 1px 20px black, 0 0 10px blue;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px darkred, 0 0 20px red, 0 0 30px crimson;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marquee">
+    <span>Infinity Sec Team • Infinity Sec Team • Infinity Sec Team • Infinity Sec Team • </span>
+  </div>
+
+  <div class="container">
+    <h1 class="glitch glow" data-text="HACKED BY Infinity Sec">HACKED BY Infinity Sec</h1>
+    <h2>We Are Legion</h2>
+    <h3>hahahaha!!!</h3>
+    <p>
+    #Mr.infinity505,
+    
+  #alwaysixiz</p>
+    <audio controls autoplay loop>
+      <source src="https://files.catbox.moe/q2c047.mp3" type="audio/mpeg">
+      Your browser does not support the audio element
+    </audio>
+  </div>
+
+  <footer>
+    © 2025 - Stay Safe | Ethical Hack Only
+  </footer>
+</body>
+</html>
